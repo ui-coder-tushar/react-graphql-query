@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import {useCharacter} from "../Hooks/useCharacter";
+import {useCharacter} from "../../Hooks/useCharacter";
 import './Character.css';
 
 export const Character = () => {

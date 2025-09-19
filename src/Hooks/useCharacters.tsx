@@ -1,17 +1,6 @@
-import { useQuery, gql } from '@apollo/client';
+import { useQuery } from '@apollo/client';
+import {GET_CHARACTERS} from '../Shared/gql_Queries';
 
-export const GET_CHARACTERS = gql`
-query {
-  characters{
-    results {
-      id,
-      name,
-      image,
-      gender
-    }
-}
-}
-`
 const useCharacters = () => {
     const { data, error, loading } = useQuery(GET_CHARACTERS);
     return {

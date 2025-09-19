@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import './CharacterList.css';
-import useCharacters from "../Hooks/useCharacters";
+import useCharacters from "../../Hooks/useCharacters";
 import { Link } from "react-router";
 
 export const CharactersList = () => {
